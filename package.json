@@ -10,7 +10,7 @@
             "src"
         ],
         "ext": "ts,json",
-        "exec": "yarn eslint && tsc && node -r tsconfig-paths/register dist/index.js"
+        "exec": "tsc && node -r tsconfig-paths/register dist/index.js"
     },
     "devDependencies": {
         "@types/node": "latest",
