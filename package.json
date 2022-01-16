@@ -1,0 +1,24 @@
+{
+    "name": "server",
+    "private": true,
+    "scripts": {
+        "build": "rimraf dist && tsc",
+        "start": "cross-env NODE_PATH=./dist nodemon"
+    },
+    "nodemonConfig": {
+        "watch": [
+            "src"
+        ],
+        "ext": "ts,json",
+        "exec": "yarn eslint && tsc && node -r tsconfig-paths/register dist/index.js"
+    },
+    "devDependencies": {
+        "@types/node": "latest",
+        "@typescript-eslint/eslint-plugin": "^5.9.1",
+        "@typescript-eslint/parser": "^5.9.1",
+        "cross-env": "latest",
+        "eslint": "^8.7.0",
+        "tsconfig-paths": "^3.12.0",
+        "typescript": "latest"
+    }
+}
