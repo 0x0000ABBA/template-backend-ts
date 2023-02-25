@@ -12,9 +12,15 @@
     },
     "devDependencies": {
         "@types/node": "latest",
-        "tsconfig-paths": "latest",
-        "typescript": "latest",
         "cross-env": "latest",
-        "nodemon": "latest"
+        "nodemon": "latest",
+        "tsconfig-paths": "latest",
+        "typescript": "latest"
+    },
+    "dependencies": {
+        "@types/node-telegram-bot-api": "^0.57.6",
+        "bot-router": "^1.0.2",
+        "redis": "^4.6.4",
+        "telegraf": "^4.11.2"
     }
 }
